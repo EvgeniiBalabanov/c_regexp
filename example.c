@@ -15,10 +15,10 @@ int		main(void)
 	regexp_struct = ft_regexp_parse(string, pattern);
 	if (regexp_struct)
 	{
-		group_0 = ft_regexp_group(0, regexp_findall_struct);
-		group_1 = ft_regexp_group(1, regexp_findall_struct);
-		group_2 = ft_regexp_group(2, regexp_findall_struct);
-		group_3 = ft_regexp_group(3, regexp_findall_struct);
+		group_0 = ft_regexp_group(0, regexp_struct);
+		group_1 = ft_regexp_group(1, regexp_struct);
+		group_2 = ft_regexp_group(2, regexp_struct);
+		group_3 = ft_regexp_group(3, regexp_struct);
 		printf("\"%s\"\n\"%s\"\n\"%s\"\n\"%s\"\n", group_0, group_1, group_2, group_3);
 		ft_regexp_free(regexp_struct);
 	else
