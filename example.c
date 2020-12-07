@@ -9,7 +9,6 @@ int		main(void)
 	char				*group_2;
 	char				*group_3;
 	t_regexp			*regexp_struct;
-	t_regexp_findall	*regexp_findall_struct;
 
 	string = "RE    \t 1234 840   \nSE     ./path to dest.cub";
 	pattern = "RE[ \t]+(\d+)[ \t]+(\d+)[ \t]+\n+SE[ \t]+(*+)";
